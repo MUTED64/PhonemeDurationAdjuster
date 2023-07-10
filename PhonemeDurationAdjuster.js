@@ -1,6 +1,6 @@
 function getClientInfo() {
   return {
-    name: SV.T("Vowel Length Batch Adjustment"),
+    name: SV.T("Phoneme Duration Batch Adjustment"),
     author: "MUTED64",
     versionNumber: 0.1,
     minEditorVersion: 65540,
@@ -10,7 +10,7 @@ function getClientInfo() {
 function getTranslations(langCode) {
   if (langCode == "zh-cn") {
     return [
-      ["Vowel Length Batch Adjustment", "元音长度批量调节"],
+      ["Phoneme Duration Batch Adjustment", "音素长度批量调节"],
       ["No note selected", "未选择音符"],
       ["Please select some notes first.", "请先选中一些音符。"],
       ["Current Voice Language", "当前歌声语言"],
@@ -237,7 +237,7 @@ function main() {
     return;
   } else {
     var form = {
-      title: SV.T("Vowel Length Batch Adjustment"),
+      title: SV.T("Phoneme Duration Batch Adjustment"),
       message: SV.T(
         "Please select the current singing language and select the vowel and consonant length."
       ),
